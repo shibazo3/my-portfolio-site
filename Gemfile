@@ -26,3 +26,4 @@ end
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.5'
+gem 'activestorage', '~> 5.2.0' 
