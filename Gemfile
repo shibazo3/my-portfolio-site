@@ -14,6 +14,7 @@ gem 'friendly_id', '~> 5.2.0'
 group :development, :test do
   gem 'sqlite3',      '1.3.13'
   gem 'byebug', '9.0.6', platform: :mri
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -27,3 +28,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.5'
 gem 'activestorage', '~> 5.2.0' 
+gem 'bootstrap', '~> 4.1.3'
