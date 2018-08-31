@@ -12,7 +12,7 @@ gem 'bootsnap', require: false
 gem 'friendly_id', '~> 5.2.0'
 
 group :development, :test do
-  gem 'sqlite3',      '1.3.13'
+  gem 'sqlite3', groups: %w(test development), require: false
   gem 'byebug', '9.0.6', platform: :mri
   gem 'pry-byebug'
 end
@@ -22,6 +22,10 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
