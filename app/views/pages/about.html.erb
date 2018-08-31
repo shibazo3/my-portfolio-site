@@ -1,7 +1,7 @@
 <div class="app-card-container">
   <div class="card">
     <h1>About Me</h1>
-      
+      <hr>
       <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
@@ -24,10 +24,11 @@
       </div>
         
         <div class="col-md-8">
+          <h3>柴田 翼/しばぞー</h3>
           <p>音楽・読書・旅行・運動・新しいものが好きな94年秋田生まれ。<br>
           大学を卒業後、長野県の老舗旅館等で勤務。国内外のたくさんのお客様へのおもてなしを経験。</p>
           <p>その傍、"とにかくやってみる"精神でWordPressブログ運営、フィリピン語学留学、プログラミング学習など個人で様々なアクションを起こしている。</p>
-          <p>現在はRuby on Railsを中心に学習中。</p>
+          <p>現在はRuby on Railsを中心に学習中。将来的に教育もできるようになりたい。</p>
           <p>向学心・ポジティブさ・環境適応力が強み。</p>
           
            <p>
@@ -52,27 +53,76 @@
           >
             Education
           </button>
+          
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#hobbies"
+            aria-expanded="false"
+            aria-controler="hobbies"
+          >
+            Hobbies
+          </button>
+          
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#motto"
+            aria-expanded="false"
+            aria-controler="motto"
+          >
+            Motto
+          </button>
         </p>
 
           <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              職歴1:株式会社ヒューマニック | 長野県ホテル併設飲食店ホール&キッチン業務
             </div>
             <div class="card card-block">
-              Job 2
+              職歴2:株式会社アプリ | 長野県老舗旅館で仲居業務
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              学歴1:秋田県立新屋高等学校
             </div>
             <div class="card card-block">
-              School 2
+              学歴2:東北学院大学 経済学部・経済学科
+            </div>
+             <div class="card card-block">
+              おまけ:スパルタキャンプ Swift編
+            </div>
+          </div>
+          
+          <div class="collapse" id="hobbies">
+            <div class="card card-block">
+              趣味1:音楽 | 原点はYUIさんでポップ寄りな曲が好み。ドラム歴は8年ほど。
             </div>
             <div class="card card-block">
-              School 3
+              趣味2:旅行 | 思いつきで突然一人旅で台湾へ行ってしまい当時の彼女を困らせたことも...
+            </div>
+             <div class="card card-block">
+              趣味3:スポーツ | 千葉ロッテファン。中学までは坊主頭の野球部。最近は筋トレに夢中。
+            </div>
+            <div class="card card-block">
+              趣味4:読書 | 経済・金融小説が最近のマイブーム。人生を変えてくれた本はホリエモンの「ゼロ」
+            </div>
+          </div>
+          
+          <div class="collapse" id="motto">
+            <div class="card card-block">
+              座右の銘1:It's never too rate to start.(遅すぎることはない)
+            </div>
+            <div class="card card-block">
+              座右の銘2:Happiness depends upon ourselves. by Aristotle (幸せかどうかは自分次第)
+            </div>
+            <div class="card card-block">
+              座右の銘3:All is well. from 3idiots(きっとうまくいく)
             </div>
           </div>
         </p>
@@ -80,3 +130,5 @@
     </div>
   </div>
 </div>
+
+
