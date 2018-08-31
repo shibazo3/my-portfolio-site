@@ -1,4 +1,3 @@
-
 module ApplicationHelper
   def login_helper style = ''
     if current_user.is_a?(GuestUser)
@@ -18,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Tsubasa SHibata', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Tsubasa Shibata', 'All rights reserved'
   end
 
   def nav_items
