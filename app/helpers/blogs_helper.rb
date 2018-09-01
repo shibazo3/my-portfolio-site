@@ -5,12 +5,12 @@ module BlogsHelper
 
   class CodeRayify < Redcarpet::Render::HTML
     def block_code(code, language)
-      CodeRay.scan(code, language).div(:line_numbers => :table)
+      CodeRay.scan(code, language || :text).div
     end
   end
 
   def markdown(text)
-    language ||= :Ruby
+    language ||= :ruby
     coderayified = CodeRayify.new(:filter_html => true, :hard_wrap => true)
     options = {
       :fenced_code_blocks => true, #ここのoptionは任意で好きなようにカスタマイズしてok
