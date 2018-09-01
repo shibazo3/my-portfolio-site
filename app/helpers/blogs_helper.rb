@@ -10,7 +10,6 @@ module BlogsHelper
   end
 
   def markdown(text)
-    language ||= :plaintext
     coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
 
     options = {
