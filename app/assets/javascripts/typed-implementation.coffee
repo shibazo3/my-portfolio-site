@@ -5,7 +5,6 @@ ready = ->
       'I hope you can be known about me in detail through this site. Please have a look!'
     ]
     typeSpeed: 0,
-    backDelay: 500,
     loop: true,
   return
 
