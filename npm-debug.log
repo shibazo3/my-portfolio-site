@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/heroku/bin/node',
+1 verbose cli   '/home/ec2-user/.nvm/versions/node/v6.14.4/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '-g',
+1 verbose cli   'yarn' ]
+2 info using npm@3.10.10
+3 info using node@v10.9.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData yarn
+8 silly fetchNamedPackageData yarn
+9 silly mapToRegistry name yarn
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'yarn',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'yarn',
+12 silly mapToRegistry   name: 'yarn',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/yarn
+14 verbose request uri https://registry.npmjs.org/yarn
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:51:54 AM
+17 verbose request id 323471e9a67d862d
+18 http request GET https://registry.npmjs.org/yarn
+19 info retry will retry, error on last attempt: Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+20 info attempt registry request try #2 at 11:52:05 AM
+21 http request GET https://registry.npmjs.org/yarn
+22 info retry will retry, error on last attempt: Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+23 info attempt registry request try #3 at 11:53:05 AM
+24 http request GET https://registry.npmjs.org/yarn
+25 silly fetchPackageMetaData Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+25 silly fetchPackageMetaData     at Object.checkServerIdentity (tls.js:228:17)
+25 silly fetchPackageMetaData     at TLSSocket.onConnectSecure (_tls_wrap.js:1057:27)
+25 silly fetchPackageMetaData     at TLSSocket.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:629:8)
+25 silly fetchPackageMetaData  error for yarn { Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+25 silly fetchPackageMetaData     at Object.checkServerIdentity (tls.js:228:17)
+25 silly fetchPackageMetaData     at TLSSocket.onConnectSecure (_tls_wrap.js:1057:27)
+25 silly fetchPackageMetaData     at TLSSocket.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:629:8)
+25 silly fetchPackageMetaData   reason:
+25 silly fetchPackageMetaData    'Host: registry.npmjs.org. is not in the cert\'s altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net',
+25 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   cert:
+25 silly fetchPackageMetaData    { subject:
+25 silly fetchPackageMetaData       { C: 'US',
+25 silly fetchPackageMetaData         ST: 'California',
+25 silly fetchPackageMetaData         L: 'San Francisco',
+25 silly fetchPackageMetaData         O: 'Fastly, Inc.',
+25 silly fetchPackageMetaData         CN: 'a.sni.fastly.net' },
+25 silly fetchPackageMetaData      issuer:
+25 silly fetchPackageMetaData       { C: 'BE',
+25 silly fetchPackageMetaData         O: 'GlobalSign nv-sa',
+25 silly fetchPackageMetaData         CN: 'GlobalSign Organization Validation CA - SHA256 - G2' },
+25 silly fetchPackageMetaData      subjectaltname: 'DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net',
+25 silly fetchPackageMetaData      infoAccess: { 'CA Issuers - URI': [Array], 'OCSP - URI': [Array] },
+25 silly fetchPackageMetaData      modulus:
+25 silly fetchPackageMetaData       'E52A134067F6466ED603D4C143594789AB140EDF23FE6C347F08CE76E883825C152109FAC202161320EB7E2309654516A2AE77970790342A5AF661F9D715FBD4C0152A1863ACD6E87061957F8A53087D1F0E6FA71E05236C082D17FEA54EBA795FD0A53B3991C2EDA1E79E43D616B40415D3EE768371F69CB9FB754D73FECC3DBBAAA3C3A47C239923E9950FD15203AAB6670A29DAE21CC9642544A84EA7D54ABDD54032A39AF357B56C8A5AA34D450870D9D4524AAECEF3C5A738AA631CB2396FC3EBF54588F0B262D94A166B927734453EC8FEA7475D26AC91D3D333BF1B3E36E8EA4765A80B67C9B5F97269515581676B78A1D1087470FF9F6404960BF829',
+25 silly fetchPackageMetaData      exponent: '0x10001',
+25 silly fetchPackageMetaData      pubkey:
+25 silly fetchPackageMetaData       <Buffer 30 82 01 22 30 0d 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82 01 0a 02 82 01 01 00 e5 2a 13 40 67 f6 46 6e d6 03 d4 c1 43 59 47 89 ab ... >,
+25 silly fetchPackageMetaData      valid_from: 'Jul  9 18:51:07 2018 GMT',
+25 silly fetchPackageMetaData      valid_to: 'Jul  9 18:51:07 2020 GMT',
+25 silly fetchPackageMetaData      fingerprint:
+25 silly fetchPackageMetaData       '39:BF:DC:2A:63:94:EE:A3:1E:7A:4A:47:2B:D7:D7:AD:2D:6E:BB:5B',
+25 silly fetchPackageMetaData      fingerprint256:
+25 silly fetchPackageMetaData       '21:18:2B:00:19:6B:66:EB:77:52:6B:1B:43:96:03:5C:1A:31:59:41:9C:86:35:07:F8:40:15:F5:68:3E:CE:87',
+25 silly fetchPackageMetaData      ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+25 silly fetchPackageMetaData      serialNumber: '5D43BB5BCB9DAD6D90F12FC5',
+25 silly fetchPackageMetaData      raw:
+25 silly fetchPackageMetaData       <Buffer 30 82 06 db 30 82 05 c3 a0 03 02 01 02 02 0c 5d 43 bb 5b cb 9d ad 6d 90 f1 2f c5 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 66 31 0b 30 09 06 03 ... >,
+25 silly fetchPackageMetaData      issuerCertificate:
+25 silly fetchPackageMetaData       { subject: [Object],
+25 silly fetchPackageMetaData         issuer: [Object],
+25 silly fetchPackageMetaData         infoAccess: [Object],
+25 silly fetchPackageMetaData         modulus:
+25 silly fetchPackageMetaData          'C70E6C3F23937FCC70A59D20C30E533F7EC04EC29849CA47D523EF03348574C8A3022E465C0B7DC9889D4F8BF0F89C6C8C5535DBBFF2B3EAFBE356E74A46D91322CA36D59BC1A8E3964393F20CBCE6F9E6E899C86348787F5736691A191D5AD1D47DC29CD47FE18012AE7AEA88EA57D8CA0A0A3A1249A262197A0D24F737EBB473927B05239B12B5CEEB29DFA41402B901A5D4A69C436488DEF87EFEE3F51EE5FEDCA3A8E46631D94C25E918B9895909AEE99D1C6D370F4A1E352028E2AFD4218B01C445AD6E2B63AB926B610A4D20ED73BA7CCEFE16B5DB9F80F0D68B6CD908794A4F7865DA92BCBE35F9B3C4F927804EFF9652E60220E10773E95D2BBDB2F1',
+25 silly fetchPackageMetaData         exponent: '0x10001',
+25 silly fetchPackageMetaData         pubkey:
+25 silly fetchPackageMetaData          <Buffer 30 82 01 22 30 0d 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82 01 0a 02 82 01 01 00 c7 0e 6c 3f 23 93 7f cc 70 a5 9d 20 c3 0e 53 3f 7e ... >,
+25 silly fetchPackageMetaData         valid_from: 'Feb 20 10:00:00 2014 GMT',
+25 silly fetchPackageMetaData         valid_to: 'Feb 20 10:00:00 2024 GMT',
+25 silly fetchPackageMetaData         fingerprint:
+25 silly fetchPackageMetaData          '90:2E:F2:DE:EB:3C:5B:13:EA:4C:3D:51:93:62:93:09:E2:31:AE:55',
+25 silly fetchPackageMetaData         fingerprint256:
+25 silly fetchPackageMetaData          '74:EF:33:5E:5E:18:78:83:07:FB:9D:89:CB:70:4B:EC:11:2A:BD:23:48:7D:BF:F4:1C:4D:ED:50:70:F2:41:D9',
+25 silly fetchPackageMetaData         serialNumber: '040000000001444EF04247',
+25 silly fetchPackageMetaData         raw:
+25 silly fetchPackageMetaData          <Buffer 30 82 04 69 30 82 03 51 a0 03 02 01 02 02 0b 04 00 00 00 00 01 44 4e f0 42 47 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 57 31 0b 30 09 06 03 55 ... >,
+25 silly fetchPackageMetaData         issuerCertificate: [Object] } } }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+30 verbose stack     at Object.checkServerIdentity (tls.js:228:17)
+30 verbose stack     at TLSSocket.onConnectSecure (_tls_wrap.js:1057:27)
+30 verbose stack     at TLSSocket.emit (events.js:182:13)
+30 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:629:8)
+31 verbose cwd /home/ec2-user/environment/DevcampPortfolio
+32 error Linux 4.14.62-65.117.amzn1.x86_64
+33 error argv "/usr/local/heroku/bin/node" "/home/ec2-user/.nvm/versions/node/v6.14.4/bin/npm" "i" "-g" "yarn"
+34 error node v10.9.0
+35 error npm  v3.10.10
+36 error code ERR_TLS_CERT_ALTNAME_INVALID
+37 error Hostname/IP does not match certificate's altnames: Host: registry.npmjs.org. is not in the cert's altnames: DNS:a.sni.fastly.net, DNS:a.sni.global-ssl.fastly.net
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]
