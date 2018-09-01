@@ -49,5 +49,6 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'gritter', '~> 1.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
+gem 'rails_12factor', '~> 0.0.3'
 
 ruby "2.4.1"
