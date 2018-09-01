@@ -5,22 +5,22 @@ module BlogsHelper
 
   class CodeRayify < Redcarpet::Render::HTML
     def block_code(code, language)
-      CodeRay.scan(code, language || :text).div
+      CodeRay.scan(code, language).div(:line_numbers => :table)
     end
   end
 
-  def markdown
-    coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
-
+  def markdown(text)
+    coderayified = CodeRayify.new(:filter_html => true, :hard_wrap => true)
     options = {
-      fenced_code_blocks: true,
-      no_intra_emphasis: true,
-      autolink: true,
-      lax_html_blocks: true,
-    }
-
-    markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
-    markdown_to_html.render(text).html_safe
+      :fenced_code_blocks => true, #ここのoptionは任意で好きなようにカスタマイズしてok
+      :no_intra_emphasis  => true,
+      :autolink           => true,
+      :strikethrough      => true,
+      :lax_html_blocks    => true,
+      :superscript        => true
+     }
+     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
+     markdown_to_html.render(text).html_safe
   end
 
   def blog_status_color blog
