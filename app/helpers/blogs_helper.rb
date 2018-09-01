@@ -10,6 +10,7 @@ module BlogsHelper
   end
 
   def markdown(text)
+    language ||= :Ruby
     coderayified = CodeRayify.new(:filter_html => true, :hard_wrap => true)
     options = {
       :fenced_code_blocks => true, #ここのoptionは任意で好きなようにカスタマイズしてok
