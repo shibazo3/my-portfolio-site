@@ -9,7 +9,7 @@ module BlogsHelper
     end
   end
 
-  def markdown(text)
+  def markdown
     coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
 
     options = {
